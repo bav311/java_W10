@@ -1,8 +1,16 @@
 package t2023;
 
-public class Task {
+public class DeletingIdenticalLines {
 	public static void main(String[] args) {
 		String[] array = new String[]{"Hello", "Hello", "World", "Java", "Tasks", "World"};
+		delLine(array);
+
+		for (String a : array) {
+			System.out.print(a + " ");
+		}
+	}
+
+	public static void delLine(String[] array) {
 		for (int i = 0; i < array.length; i++) {
 			String temp = array[i];
 			if (array[i] != null) {
@@ -13,13 +21,7 @@ public class Task {
 					}
 				}
 			}
-
 		}
-
-		for (String a : array) {
-			System.out.print(a + " ");
-		}
-
 	}
 
 }
