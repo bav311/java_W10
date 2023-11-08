@@ -3,7 +3,7 @@ package t2023;
 
 import java.util.Scanner;
 
-public class Task {
+public class StringMethods {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner("wqewqe/qwewqeqwe/qwewqeqe/a");
 		String path = scan.nextLine();
