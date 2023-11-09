@@ -1,33 +1,21 @@
-//https://javarush.com/quests/lectures/questsyntaxpro.level09.lecture03
+//https://javarush.com/quests/lectures/questsyntaxpro.level06.lecture02
 package t2023;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Task {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner("wqewqe/qwewqeqwe/qwewqeqe/a");
-		String path = scan.nextLine();
-		// var 1
-		char[] chars = path.toCharArray();
-		for (int i = 0; i < chars.length; i++) {
-			if (chars[i] == '/') {
-				chars[i] = '\\';
-			}
+	public static void fillArray (int[] [] data, int value) {
+		for (int[] datum : data) {
+			Arrays.fill(datum, value);
 		}
-		String pathNew = new String(chars);
-		System.out.println(pathNew);
-		System.out.println();
+	}
 
-		// var 2
-		String[] array = path.split("/");
-		String pachNew2 = String.join("\\", array);
-		System.out.println(pachNew2);
-		System.out.println();
-
-		//var 3
-		String pachNew3 = path.replace('/','\\');
-		System.out.println(pachNew3);
+	public static void main(String[] args) {
 
 
+		int[][] months = {{31, 28}, {31, 30, 31}, {30, 31, 31}};
+		System.out.println(Arrays.deepToString(months));
+		fillArray(months,88);
+		System.out.println(Arrays.deepToString(months));
 	}
 }
