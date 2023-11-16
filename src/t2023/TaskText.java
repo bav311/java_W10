@@ -1,7 +1,8 @@
 //https://javarush.com/groups/posts/mnogomernye-massivy#%D0%94%D0%B2%D1%83%D0%BC%D0%B5%D1%80%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B
 //https://javarush.com/quests/lectures/questsyntaxpro.level23.lecture08
 
-/*compareTo(String anotherString) - лексиграфическое сравнение строк;
+/*
+compareTo(String anotherString) - лексиграфическое сравнение строк;
 compareToIgnoreCase(String str) - лексиграфическое сравнение строк без учета регистра символов;
 regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len) - тест на идентичность участков строк, можно указать учет регистра символов;
 regionMatches(int toffset, String other, int ooffset, int len) - тест на идентичность участков строк;
@@ -18,6 +19,7 @@ indexOf(int ch) - поиск первого вхождения символа в
 indexOf(int ch, int fromIndex) - поиск первого вхождения символа в строке с указанной позиции;
 indexOf(String str) - поиск первого вхождения указанной подстроки;
 indexOf(String str, int fromIndex) - поиск первого вхождения указанной подстроки с указанной позиции;
+
 lastIndexOf(int ch) - поиск последнего входения символа;
 lastIndexOf(int ch, int fromIndex) - поиск последнего входения символа с указанной позиции;
 lastIndexOf(String str) - поиск последнего вхождения строки;
