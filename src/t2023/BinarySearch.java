@@ -7,7 +7,7 @@ package t2023;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int[] arr = {1, 8, 35, 40, 41, 44, 56, 65, 94, 99, 100, 101};
+        int[] arr = {1, 8, 35, 40, 41, 44, 56, 65, 94, 99, 100, 101, 154, 199};
 
         printArr(arr);
         System.out.println();
