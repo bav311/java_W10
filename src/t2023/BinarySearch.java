@@ -7,11 +7,11 @@ package t2023;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int[] arr = {1, 8, 35, 40, 41, 44, 56, 65, 94, 99, 100, 101, 154, 199};
+        int[] arr = {1, 8, 35, 40, 41, 44, 56, 65, 94};
 
         printArr(arr);
         System.out.println();
-        System.out.println(binarySearch(arr,41));
+        System.out.println(binarySearch(arr,94));
 
 
 
@@ -26,10 +26,10 @@ public class BinarySearch {
 
                 if (arr[mid] == target) {
                     return mid; // Найден, возвращаем индекс
-                } else if (arr[mid] < target) {
-                    left = mid + 1; // Целевой элемент находится в правой половине
-                } else {
+                } else if (arr[mid] > target) {
                     right = mid - 1; // Целевой элемент находится в левой половине
+                } else {
+                    left = mid + 1; // Целевой элемент находится в правой половине
                 }
             }
 
