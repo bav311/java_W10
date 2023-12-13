@@ -6,20 +6,23 @@ package t2023;
 
 import java.util.Arrays;
 
-public class Task {
+public class NumberSplitInArray {
 	public static void main(String[] args) {
-		int[] nums = {-4, -1, 0, 3, 10}; //16,1,0,9,100
-		System.out.println(Arrays.toString(sortedSquares(nums)));
+		long x = 35231;
+		System.out.println(Arrays.toString(digitize(x)));
 
 
 	}
 
-	public static int[] sortedSquares(int[] nums) {
-		for (int i = 0; i < nums.length; i++) {
-			nums[i] = (int) Math.pow(nums[i], 2 );
+	public static int [] digitize (long n) {
+		int [] arr = new int[String.valueOf(n).length()];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) (n % 10);
+			n /= 10;
+
 		}
-		Arrays.sort(nums);
 
-		return nums;
-	}
+		return arr;
+}
+
 }

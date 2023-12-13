@@ -5,25 +5,16 @@ import java.util.Arrays;
 public class Task2 {
 
 	public static void main(String[] args) {
-		boolean[] door = new boolean[101];
-		System.out.println(Arrays.toString(door));
-
-		for (int j = 1; j < 101; j++) {
-			for (int i = 1; i < door.length; i++) {
-				if (i % j == 0) {
-					door[i] = !door[i];
-				}
-			}
+		int [] array = new int[6];
+		System.out.println(Arrays.toString(array));
+		int length = 0;
+		for (int i = 0; i < 4; i++) {
+			array[length] = i;
+			length++;
 		}
-		System.out.println(Arrays.toString(door));
+		System.out.println(Arrays.toString(array));
 
 
-		for (int i = 1; i < door.length; i++) {
-			if (door[i]) {
-				System.out.print(i + " ");
-			}
-
-		}
 
 
 	}
