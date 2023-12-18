@@ -2,7 +2,7 @@ package t2023;
 
 import java.util.Arrays;
 
-public class Doors100 {
+public class Doors100OpenClose {
 
 	public static void main(String[] args) {
 		boolean[] door = new boolean[101];

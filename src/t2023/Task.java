@@ -4,22 +4,33 @@
 
 package t2023;
 
-import java.util.Arrays;
-
 public class Task {
-	public static void main(String[] args) {
-		int[] nums = {-4, -1, 0, 3, 10}; //16,1,0,9,100
-		System.out.println(Arrays.toString(sortedSquares(nums)));
+    public static void main(String[] args) {
+        String a = "dermatoglyphics"; //true
+        String a1 =  "moose"; // false
+        String a2 =  "aba"; // false
+        System.out.println(a.charAt(2));
 
 
-	}
 
-	public static int[] sortedSquares(int[] nums) {
-		for (int i = 0; i < nums.length; i++) {
-			nums[i] = (int) Math.pow(nums[i], 2 );
-		}
-		Arrays.sort(nums);
 
-		return nums;
-	}
-}
+
+
+    }
+    public static boolean  isIsogram(String str) {
+        char [] test = str.toCharArray();
+        int count = 0;
+        for (int i = 0; i < test.length; i++) {
+            char tmp = test[i];
+            for (int j = 1; j < test.length -1; j++) {
+
+            }
+
+        }
+
+
+
+        return false;
+    }
+    }
+
